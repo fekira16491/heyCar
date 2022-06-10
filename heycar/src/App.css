@@ -1,4 +1,4 @@
-  /* .App {
+/* .App {
     text-align: center;
   }
 
@@ -44,12 +44,12 @@
     background: green;
     height: 100%;
     background-size: cover; /* <-- background size */
-  /* background-position: strech;
+/* background-position: strech;
     display: inline-block; */
-  /* <-- background position */
-  /* } */
+/* <-- background position */
+/* } */
 
-  /* .info {
+/* .info {
     grid-area: info;
     background: #4f4d53;
     display: inline-block;
@@ -101,7 +101,7 @@
     font-family: Arial, Helvetica, sans-serif;
   } */
 
-  /* @media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
     .header a {
       float: none;
       display: block;
@@ -318,41 +318,278 @@
     align-items: center;
   } */
 
-  .box {
-    display: flex;
-    flex-direction: row;
+  /* .box {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+}
+
+.Img-menu {
+  margin-bottom: 20px;
+  height: 20px;
+  width: 20px;
+}
+.flex-container {
+  padding: 1;
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.main-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.AppbarGrid {
+  display: flex;
+  flex-direction: row;
+}
+
+.AppbarGrid button{
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+.AppbarGrid button.NonActiveButton {
+  background-color: red;
+ 
+}
+ .ActiveButton {
+  background-color: red;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+ 
+}
+.AppbarGrid button:hover {
+  background-color: #ddd;
+}
+
+.mainDiv{
     background-color: red;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 128px 0px;
+}
 
 
-  .Img-menu {
-    margin-bottom: 20px;
-    height: 20px;
-    width: 20px;
-  }
+
+
+.mainDivTextTemplate{
+padding-top: 50px;
+padding-bottom: 50px;
+
+}
+
+.mainDivStartPage{
+ 
+}
+.divtext{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px 0px;
+}
+.divandimage{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+    width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainDivButtonColor{
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 200px;
+}
+
+.bottomFooter{
+background-color: grey;
+padding: 60px 0px;
+color: white;
+font-size: 30px;
+}
+
+@media (max-width: 800px) {
   .flex-container {
-    padding: 1;
-      margin-top: 25px;
-      display: flex;
-      justify-content:flex-end;
-      flex-grow: 1;
-      margin-right: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .main-flex-container{
-    
-      display: flex;
-      flex-direction:row
+  .main-flex-container {
+    flex-direction: column;
+  }
+} */
 
-  }
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .main-flex-container{
-    
-      flex-direction:column
+:root {
+  --clr-primary-300: #ff5733;
+  --clr-primary-400: #737589;
+  --clr-neutral-500: #89737f;
 
+  --ff-primary: "Roboto", sans-serif;
+  --ff-accent: "Playfair Display", serif;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 1.3123rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+p,
+h1,
+body,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1;
+  font-family: var(--ff-accent);
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+
+.bg-light {
+  background-color: #bac3cd;
+  color: white;
+}
+
+.bg-accent {
+  background-color: #737589;
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: #89737f;
+  color: white;
+}
+
+header {
+  padding: 0rem 0;
+
+}
+section {
+  padding: 3rem 0;
+}
+
+.topSection {
+  padding: 10rem 0rem;
+  background-color: red;
+  color: white;
+
+  text-align: center;
+}
+.topSection--center {
+  width: min(70%, 40rem);
+  margin-inline: auto;
+}
+
+.split {
+  display: flex;
+}
+
+.split--workdata {
+  padding: 5rem 0;
+  margin-inline: auto;
+  width: min(70%, 70.5rem);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divtext{
+  margin-inline: 2rem;
+}
+
+.topSectionbutton {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: min(100%, 10rem);
+}
+
+.AppbarGrid {
+  display: flex;
+  flex-direction: row;
+}
+
+.AppbarGrid button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.quoteText{
+  padding: 4rem 0;
+  background-color:#737589;
+  color: white;
+  
+}
+
+@media (max-width: 800px) {
+  .split {
+    flex-direction: column;
+   
   }
+  .split--workdata {
+    flex-direction: column;
+    padding: 5rem 0;
+    margin-inline: auto;
+    width: min(70%, 70.5rem);
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .divtext{
+    text-align: center;
+  }
+
+  
+
+}

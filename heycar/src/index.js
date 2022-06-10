@@ -6,6 +6,7 @@ import Dashboard from "./Components/ui/Dashboard";
 import { Provider } from "react-redux";
 import configStore from "./Components/store/configStore";
 import NoInternetConnection from "./Components/ui/NoInternetConnection";
+import WorkData from "./Components/ui/WorkData";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 let { store } = configStore();
 
@@ -13,7 +14,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <NoInternetConnection>
-        <Dashboard />
+        <WorkData />
       </NoInternetConnection>
     </Provider>
   </React.StrictMode>
